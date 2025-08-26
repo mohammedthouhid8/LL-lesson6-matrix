@@ -4,8 +4,8 @@ on:
   push:
 
 jobs:
-  matrix-jobs:
-    name: matrix jobs
+  matrix-job:
+    name: matrix job  
     strategy:
       matrix:
         runner: [ubuntu-latest, windows-latest]
@@ -18,5 +18,5 @@ jobs:
             python-version: 3.13
     runs-on: ${{ matrix.runner }}
     steps:
-      - runs: echo this job will runs on python version ${{ matrix.python-version }}  
+      - run: echo this job will runs on python version ${{ matrix.python-version }}  
    
