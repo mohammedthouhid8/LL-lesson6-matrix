@@ -5,7 +5,7 @@ on:
 
 jobs:
   matrix-jobs:
-    name: matrix jobs:runs
+    name: matrix jobs
     strategy:
       matrix:
         runner: [ubuntu-latest, windows-latest]
